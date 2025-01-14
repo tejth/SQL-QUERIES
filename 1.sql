@@ -144,3 +144,8 @@ SELECT cust_id, cust_name, cust_city, cust_phone FROM CUSTOMER
 UNION
 SELECT order_id, order_name, NULL, NULL FROM ordertable;
 
+
+-- view queries
+create view custom_view as select first_name, last_name from worker;
+select * from custom_view;
+
